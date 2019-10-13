@@ -30,5 +30,5 @@ Clone the codes and install PROPACK.
 You may run the two demo files *test_AAP_Hankel_1D.m* and *test_AAP_Hankel_2D.m* directly now, where *test_AAP_Hankel_1D.m* runs demo test on 1D signals, and *test_AAP_Hankel_2D.m* runs demo tests on 2D signals.
 
 
-
+## Reference
 [1] Fast and Robust Spectrally Sparse Signal Recovery: A Provable Non-Convex Approach via Robust Low-RankHankel Matrix Reconstruction.
