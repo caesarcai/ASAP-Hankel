@@ -24,5 +24,11 @@ PROPACK should be installed under the same directory with the other AccAltProj c
 
 \*\* User may download a completed AccAltProj package from my personal website, which includes all neccessary parts for running the algorithm directly, without extra installations.
 
+## Demo
+Clone the codes and install PROPACK.
+
+You may run the two demo files *test_AAP_Hankel_1D.m* and *test_AAP_Hankel_2D.m* directly now, where *test_AAP_Hankel_1D.m* runs demo test on 1D signals, and *test_AAP_Hankel_2D.m* runs demo tests on 2D signals.
+
+
 
 [1] Fast and Robust Spectrally Sparse Signal Recovery: A Provable Non-Convex Approach via Robust Low-RankHankel Matrix Reconstruction.
