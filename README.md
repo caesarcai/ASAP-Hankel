@@ -14,9 +14,9 @@ PROPACK should be installed under the same directory with the other AccAltProj c
 |-PROPACK
 	|- Afunc.m
  	|- AtAfunc.m
-	etc.
-|- AccAltProj.m
-|- trim.m
+	```
+|- AAP_Hankel_1D.m
+|- AAP_Hankel_2D.m
 ```
   
 \*  If user wish not to install PROPACK, they may change "lansvd" to "svds" on line 105 and 110 of *AccAltProj.m*, as well as on line 4 of *get_mu_kappa.m*. This will allow the user to run the algorithm without PROPACK installation, but may significantly impact the speed of initialization.
