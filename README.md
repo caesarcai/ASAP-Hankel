@@ -31,4 +31,4 @@ You may run the two demo files *test_AAP_Hankel_1D.m* and *test_AAP_Hankel_2D.m*
 
 
 ## Reference
-[1] Fast and Robust Spectrally Sparse Signal Recovery: A Provable Non-Convex Approach via Robust Low-RankHankel Matrix Reconstruction.
+[1] HanQin Cai, Jian-Feng Cai, Tianming Wang, and Guojian Yin. Fast and Robust Spectrally Sparse Signal Recovery: A Provable Non-Convex Approach via Robust Low-RankHankel Matrix Reconstruction. *arXiv preprint arXiv:1910.05859*, 2019
