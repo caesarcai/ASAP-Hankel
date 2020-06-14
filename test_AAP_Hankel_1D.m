@@ -1,6 +1,13 @@
 clear all;
 close all;
 
+if exist('.\PROPACK', 'dir')==7
+    addpath PROPACK;
+else
+    fprintf('No PROPACK installed.\n');
+    error('Break');
+end
+
 n     = 10000;   % signal size
 r     = 10;      % rank
 alpha = 0.1;     % amount of corruptions

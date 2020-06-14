@@ -8,12 +8,12 @@ row_norm_square_V = sum(V.^2,2);
 big_rows_V = row_norm_square_V > threshold_V;
 V(big_rows_V,:) = bsxfun(@times,V(big_rows_V,:),sqrt(threshold_V./(row_norm_square_V(big_rows_V))));   %This is B in paper
 
-% These 2 QR can be computed parallelly
+% The following 2 QR-decomp can be computed parallelly
 [Q1,R1] = qr(U,0);
 [Q2,R2] = qr(V,0);
 [U_temp,~,V_temp] = svd(R1*Sig*R2');
 
-% These 2 matrices multiplications can be computed parallelly
+% The following 2 matrices multiplications can be computed parallelly
 U_out = Q1*U_temp;
 V_out = Q2*V_temp;
 

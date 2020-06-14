@@ -1,4 +1,4 @@
-function U=conv_fft(U,V)
+function U = conv_fft(U,V)
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 %FFT based (multi-dimensional) convolution.
 %
@@ -9,36 +9,36 @@ function U=conv_fft(U,V)
 % U: (multi-dimensional) convolution of U and V, saved in U to save memory.
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
-DIM1=ndims(U);
-DIM2=ndims(V);
+DIM1 = ndims(U);
+DIM2 = ndims(V);
 
-if DIM1~=DIM2
+if DIM1 ~= DIM2
     error('Dimension Mismatch!');
 else
-    DIM=DIM1;
+    DIM = DIM1;
 end
 
-for dim=1:DIM
+for dim = 1:DIM
     
-    p=size(U,dim);
-    q=size(V,dim);
+    p = size(U,dim);
+    q = size(V,dim);
     
-    n=p+q-1;
+    n = p+q-1;
 
-    l=2^nextpow2(n);
+    l = 2^nextpow2(n);
     
-    U=fft(U,l,dim);
-    V=fft(V,l,dim);
+    U = fft(U,l,dim);
+    V = fft(V,l,dim);
     
-    Block{dim}=1:n;
+    Block{dim} = 1:n;
     
 end
  
-U=U.*V;
+U = U.*V;
 clear V;
 
-for dim=1:DIM
-    U=ifft(U,[],dim);
+for dim = 1:DIM
+    U = ifft(U,[],dim);
 end
   
-U=U(Block{:});
+U = U(Block{:});
