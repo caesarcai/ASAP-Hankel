@@ -187,7 +187,7 @@ for iter = 1:max_iter
     
 
     % estimate the outlier
-    eta = beta*(SS(r+1,r+1)+(gamma^iter)*SS(1,1));
+    eta = beta*(gamma^iter)*SS(1,1);
     s = wthresh( z - x ,'h', eta);
     
     
