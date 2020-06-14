@@ -13,7 +13,14 @@ function [x,s] = AAP_Hankel_1D(z,r,gamma)
 % x : Estimated 1D spectrally r-sparse signal.
 % s : Estimated sparse corruptions.
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-addpath(genpath('PROPACK'));
+if exist('.\PROPACK', 'dir')==7
+    addpath PROPACK;
+    propack_exist = true;
+else
+    propack_exist = false;
+    fprintf('No PROPACK installed.\n');
+    return;
+end
 
 max_iter = 100;
 err    = -1*ones(max_iter,1);

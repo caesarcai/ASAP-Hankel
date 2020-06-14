@@ -19,6 +19,13 @@ function y=fhmvmultiply_1D(h,x)
 %69(4): 875-891.
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
+if exist('.\PROPACK', 'dir')==7
+    addpath PROPACK;
+else
+    fprintf('No PROPACK installed.\n');
+    error('Break');
+end
+
 lh=length(h);
 
 lx=length(x);

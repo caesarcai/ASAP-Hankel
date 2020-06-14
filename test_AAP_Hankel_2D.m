@@ -1,6 +1,13 @@
 clear all;
 close all;
 
+if exist('.\PROPACK', 'dir')==7
+    addpath PROPACK;
+else
+    fprintf('No PROPACK installed.\n');
+    error('Break');
+end
+
 n1    = 200;   % signal size, first dimension
 n2    = n1;    % signal size, second dimension
 r     = 10;    % rank
