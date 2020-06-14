@@ -3,7 +3,7 @@ function [K,ox,f]=generate_signal(N,r,m,varargin)
 %Generate (multi-dimensional) simulated spectrally sparse signals, with or 
 %without separation between the frequencies, with or without damping.
 %
-%Inputs
+%Inputs:
 % N: a vector specify the sizes of the signal in different dimensions, the 
 % number of dimensions <= 3.
 % r: model order of the signal.
@@ -14,7 +14,7 @@ function [K,ox,f]=generate_signal(N,r,m,varargin)
 % (default, true,'true',1). Also specify whether the signal is damped. 
 % Either undamped (default, false,'false',0) or damped (true,'true',1).
 %
-%Outputs
+%Outputs:
 % K: index of the observed entries.
 % ox: a vector stores the signal generated. Use reshape(ox,N1,N2,...) to 
 % resahpe ox to a multi-dimensional array, where N1,N2,... are the 
@@ -22,11 +22,11 @@ function [K,ox,f]=generate_signal(N,r,m,varargin)
 % f: frequencies in different dimensions, stored column by column, the
 % first column contains the frequencies in the first dimension, etc.
 %
-%Example 1
+%Example 1:
 % [K,ox,f]=generate_signal(128,5,40) will generate a 1D undamped signal of 
 % length 128 with model order 5 and some separations between the frequencies,
 % it's observed at 40 locations.  
-%Example 2
+%Example 2:
 % [K,ox,f]=generate_signal([128 64 32],10,0.04,false,true) will generate a 
 % 3D damped signal of size 128*64*32 with model order 10 and without 
 % separations between the frequencies, we have 4 percent samples.
