@@ -1,4 +1,4 @@
-# AAP-Hankel
+# ASAP-Hankel
 This is the Matlab code repo for a fast provable non-convex spectrally sparse signal recovery algorithm introduced in [1], which has theoretical global linear convergence guarantee and high robustness in practice. 
 
 ###### To display math symbols properly, one may have to install a MathJax plugin. For example, [MathJax Plugin for Github](https://chrome.google.com/webstore/detail/mathjax-plugin-for-github/ioemnmodlmafdkllaclgeombjnmnbima?hl=en).
