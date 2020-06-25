@@ -37,5 +37,5 @@ z = reshape(z,[n1 n2]);
 ox = reshape(ox,[n1 n2]);
 
 % Solving the 2D problem
-[x,s] = AAP_Hankel_2D(z,r,0.5);
+[x,s] = ASAP_Hankel_2D(z,r,0.5);
 recovery_err = norm(x-ox,'fro')/norm(ox,'fro')
