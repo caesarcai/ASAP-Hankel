@@ -32,6 +32,6 @@ end
 z  = ox;
 z(IND) = ox(IND)+os;
 
-% Solving the 2D problem
-[x,s] = AAP_Hankel_1D(z,r,0.5);
+% Solving the 1D problem
+[x,s] = ASAP_Hankel_1D(z,r,0.5);
 recovery_err = norm(x-ox,'fro')/norm(ox,'fro')
