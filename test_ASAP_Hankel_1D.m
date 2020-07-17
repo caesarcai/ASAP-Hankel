@@ -5,7 +5,7 @@ if exist('.\PROPACK', 'dir')==7
     addpath PROPACK;
 else
     fprintf('No PROPACK installed.\n');
-    error('Break');
+    error('Break, PROPACK not installed');
 end
 
 n     = 10000;   % signal size
