@@ -174,8 +174,6 @@ threshold = mu*c_s*r/N;
 % iterations
 for iter = 1:max_iter
     tic;
-    % trim
-    [U,V] = trim(U,diag(ss),V,threshold,threshold);
     
     % estimate the signal
     x = z-s;
