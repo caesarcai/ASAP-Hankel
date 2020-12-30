@@ -31,4 +31,4 @@ You may run the two demo files *test_AAP_Hankel_1D.m* and *test_AAP_Hankel_2D.m*
 
 
 ## Reference
-[1] HanQin Cai, Jian-Feng Cai, Tianming Wang, and Guojian Yin. Accelerated Structured Alternating Projections for Robust Spectrally Sparse Signal Recovery. *arXiv preprint arXiv:1910.05859*, 2020
+[1] HanQin Cai, Jian-Feng Cai, Tianming Wang, and Guojian Yin. Accelerated Structured Alternating Projections for Robust Spectrally Sparse Signal Recovery. *IEEE Transactions on Signal Processing*, In Press
