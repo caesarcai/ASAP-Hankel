@@ -7,7 +7,7 @@ This is the Matlab code repo for a fast provable non-convex spectrally sparse si
 ## Installation
 Our algorithm uses the full size truncated SVD exactly once, during its initialization. However, this one-time usage has become the bottleneck of our speed comparing to the speed of the rest parts. We choose to use PROPACK to speed up this one-time full size truncated SVD. 
 
-For running our code successfully, the user should download and install the "PROPACK for Matlab" package from http://sun.stanford.edu/~rmunk/PROPACK/. 
+For running our code successfully, ~~the user should download and install the "PROPACK for Matlab" package from http://sun.stanford.edu/~rmunk/PROPACK/.~~ The original PROPACK package has problem with complex numbers, the user must install the modified (by Candes) PROPACK form https://statweb.stanford.edu/~candes/software/svt/code/.  
 
 PROPACK should be installed under the same directory with the other AccAltProj codes. After installation, your directory should read like:
 ```
@@ -22,7 +22,9 @@ PROPACK should be installed under the same directory with the other AccAltProj c
   
 \*  If user wish not to install PROPACK, they may change "lansvd" to "svds" on line 105 and 110 of *AccAltProj.m*, as well as on line 4 of *get_mu_kappa.m*. This will allow the user to run the algorithm without PROPACK installation, but may significantly impact the speed.
 
-\*\* User may download a completed AccAltProj package from my personal website, which includes all neccessary parts for running the algorithm directly, without extra installations.
+\*\* After Matlab 2020a, the bulid-in function *pythag.m* is removed/renamed, so we attached a copy of *pythag.m* here, but you only need it if you are using the lastest Matlab versions.
+
+\*\*\* User may download a completed ASAP-Hankel package from my personal website, which includes all neccessary parts for running the algorithm directly, without extra installations.
 
 ## Demo
 Clone the codes and install PROPACK.
