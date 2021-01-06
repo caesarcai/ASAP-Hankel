@@ -22,7 +22,7 @@ PROPACK should be installed under the same directory with the other AccAltProj c
   
 \*  If user wish not to install PROPACK, they may change "lansvd" to "svds" on line 105 and 110 of *AccAltProj.m*, as well as on line 4 of *get_mu_kappa.m*. This will allow the user to run the algorithm without PROPACK installation, but may significantly impact the speed.
 
-\*\* In the current verion, the problem check the existence of PROPACK folder (e.g., line 16-23 in ASAP_Hankel_1D.m) before we call the functions from it. This folder checking is based on Windows system, Mac and Linux user may find troubles for the problem to check the PROPACK folder. The Mac and Linux user should manually remove these lines in this case, and add the correct path of PROPACK accordingly.  
+\*\* In the current verion, the problem check the existence of PROPACK folder (e.g., line 16-23 in ASAP_Hankel_1D.m) before we call the functions from it. This folder checking is based on Windows system, Mac and Linux user may find troubles for the problem to check the PROPACK folder. The user should manually remove these lines of the code in this case, and add the correct path of PROPACK accordingly.  
 
 \*\*\* After Matlab 2020a, the bulid-in function *pythag.m* is removed/renamed, so we attached a copy of *pythag.m* here, but you only need it if you are using the lastest Matlab versions.
 
