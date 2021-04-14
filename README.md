@@ -42,4 +42,4 @@ Update: We learned that, Matlab calls AVX2 instruction sets for Intel CPU, but c
 
 
 ## Reference
-[1] HanQin Cai, Jian-Feng Cai, Tianming Wang, and Guojian Yin. Accelerated Structured Alternating Projections for Robust Spectrally Sparse Signal Recovery. *IEEE Transactions on Signal Processing*, In Press.
+[1] HanQin Cai, Jian-Feng Cai, Tianming Wang, and Guojian Yin. Accelerated Structured Alternating Projections for Robust Spectrally Sparse Signal Recovery. *IEEE Transactions on Signal Processing*, 69 (2021): 809-821.
