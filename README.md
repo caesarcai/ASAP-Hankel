@@ -1,6 +1,8 @@
 # ASAP-Hankel
 This is the Matlab code repo for a fast provable non-convex spectrally sparse signal recovery algorithm introduced in <a href=https://doi.org/10.1109/TSP.2021.3049618>[1]</a>, which has theoretical global linear convergence guarantee and high robustness in practice. 
 
+You may also be interested in our two new papers: <a href=https://github.com/caesarcai/HSGD>HSGD</a> and <a href=https://github.com/caesarcai/HSNLD>HSNLD</a>
+
 ###### To display math symbols properly, one may have to install a MathJax plugin. For example, [MathJax Plugin for Github](https://chrome.google.com/webstore/detail/mathjax-plugin-for-github/ioemnmodlmafdkllaclgeombjnmnbima?hl=en).
 
 
@@ -44,4 +46,5 @@ Update 2: According to the release note of Mathworks, AMD user should have **202
 
 
 ## Reference
-[1] HanQin Cai, Jian-Feng Cai, Tianming Wang, and Guojian Yin. Accelerated Structured Alternating Projections for Robust Spectrally Sparse Signal Recovery. *IEEE Transactions on Signal Processing*, 69 (2021): 809-821.
+[1] HanQin Cai, Jian-Feng Cai, Tianming Wang, and Guojian Yin. <a href=https://doi.org/10.1109/TSP.2021.3049618>Accelerated Structured Alternating Projections for Robust Spectrally Sparse Signal Recovery</a>. *IEEE Transactions on Signal Processing*, 69 (2021): 809-821. 
+<a href=https://arxiv.org/pdf/1910.05859>arXiv version</a>
